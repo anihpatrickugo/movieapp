@@ -1,0 +1,184 @@
+{% load static%}
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Streamit - Responsive Bootstrap 4 Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'mainapp/images/favicon.ico' %}" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'mainapp/css/bootstrap.min.css' %}" />
+    <!-- Typography CSS -->
+    <link rel="stylesheet" href="{% static 'mainapp/css/typography.css' %}">
+    <!-- Style -->
+    <link rel="stylesheet" href="{% static 'mainapp/css/style.css' %}" />
+    <!-- Responsive -->
+    <link rel="stylesheet" href="{% static 'mainapp/css/responsive.css' %}" />
+</head>
+
+<body>
+    <!-- loader Start -->
+    <div id="loading">
+        <div id="loading-center">
+        </div>
+    </div>
+    <!-- loader END -->
+    <!-- Header -->
+    {% include 'mainapp/header.html' %}
+    <!-- Header End -->
+    <!-- MainContent -->
+    <section class="m-profile manage-p">
+        <div class="container h-100">
+            <div class="row align-items-center justify-content-center h-100">
+                <div class="col-lg-10">
+                    <div class="sign-user_card">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="upload_profile d-inline-block">
+                                <img src="images/user/user.jpg" class="profile-pic rounded-circle img-fluid" alt="user">
+                                <div class="p-image">
+                                    <i class="ri-pencil-line upload-button"></i>
+                                    <input class="file-upload" type="file" accept="image/*">
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 device-margin">
+                                <div class="profile-from">
+                                    <h4 class="mb-3">{{user.username}}</h4>
+                                    <form class="mt-4" action="index.html">
+                                        <div class="form-group">
+                                            <label>Name</label>
+                                            <input type="text" class="form-control mb-0" id="exampleInputl2"
+                                                placeholder="Enter Your Name" autocomplete="off" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Date of Birth</label>
+                                            <input type="text" class="form-control date-input basicFlatpickr mb-0" placeholder="Select Date" id="exampleInputPassword2"
+                                            required>
+                                        </div>
+                                        <div class="form-group d-flex flex-md-row flex-column">
+                                            <div class="iq-custom-select d-inline-block manage-gen">
+                                                <select name="cars" class="form-control pro-dropdown">
+                                                    <option value="female">Female</option>
+                                                    <option value="male">Male</option>
+                                                </select>
+                                            </div>
+                                            <div class="iq-custom-select d-inline-block lang-dropdown manage-dd">
+                                                <select name="cars" class="form-control pro-dropdown" id="lang"
+                                                    multiple="multiple">
+                                                    <option value="english">English</option>
+                                                    <option value="hindi">Hindi</option>
+                                                    <option value="gujarati">Gujarati</option>
+                                                    <option value="bengali">Bengali</option>
+                                                    <option value="marathi">Marathi</option>
+                                                    <option value="tamil">Tamil</option>
+                                                    <option value="kannada">Kannada</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <a href="#" class="btn btn-hover">Save</a>
+                                            <a href="#" class="btn btn-link">Cancel</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="contact" class="footer-one iq-bg-dark">
+     
+        <!-- Address -->
+        <div class="footer-top">
+            <div class="container-fluid">
+                <div class="row footer-standard">
+                    <div class="col-lg-7">
+                        <div class="widget text-left">
+                            <div class="menu-footer-link-1-container">
+                                <ul id="menu-footer-link-1" class="menu p-0">
+                                    <li id="menu-item-7314" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7314">
+                                        <a href="#">Terms Of Use</a>
+                                    </li>
+                                    <li id="menu-item-7316" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7316">
+                                        <a href="../html/privacy-policy.html">Privacy-Policy</a>
+                                    </li>
+                                    <li id="menu-item-7118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7118">
+                                       <a href="../html/faq.html">FAQ</a>
+                                   </li>
+                                    <li id="menu-item-7118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7118">
+                                        <a href="../html/watch-video.html">Watch List</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widget text-left">			
+                            <div class="textwidget">
+                                <p><small>© 2021 STREAMIT. All Rights Reserved. All videos and shows on this platform are trademarks of, and all related images and content are the property of, Streamit Inc. Duplication and copy of this is strictly prohibited. All rights reserved.</small></p>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-2 col-md-6 mt-4 mt-lg-0">
+                        <h6 class="footer-link-title">
+                            Follow Us :
+                        </h6>
+                        <ul class="info-share"> 
+                            <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fa fa-github"></i></a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                        <div class="widget text-left">
+                            <div class="textwidget">
+                                <h6 class="footer-link-title">Streamit App</h6>
+                                <div class="d-flex align-items-center">
+                                    <a class="app-image" href="#">
+                                        <img src="../html/images/footer/01.jpg" alt="play-store">
+                                    </a><br>
+                                    <a class="ml-3 app-image" href="#"><img src="../html/images/footer/02.jpg" alt="app-store"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Address END -->
+    </footer>
+    <!-- MainContent End-->
+    <!-- back-to-top -->
+    <div id="back-to-top">
+        <a class="top" href="#top" id="top"> <i class="fa fa-angle-up"></i> </a>
+    </div>
+    <!-- back-to-top End -->
+    <!-- jQuery, Popper JS -->
+    <script src="{% static 'mainapp/js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'mainapp/js/popper.min.js' %}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{% static 'mainapp/js/bootstrap.min.js' %}"></script>
+    <!-- Slick JS -->
+    <script src="{% static 'mainapp/js/slick.min.js' %}"></script>
+    <!-- owl carousel Js -->
+    <script src="{% static 'mainapp/js/owl.carousel.min.js' %}"></script>
+    <!-- select2 Js -->
+    <script src="{% static 'mainapp/js/select2.min.js' %}"></script>
+    <!-- Magnific Popup-->
+    <script src="{% static 'mainapp/js/jquery.magnific-popup.min.js' %}"></script>
+    <!-- Flatpickr JavaScript -->
+    <script src="{% static 'mainapp/js/flatpickr.min.js' %}"></script>
+    <!-- Slick Animation-->
+    <script src="{% static 'mainapp/js/slick-animation.min.js' %}"></script>
+    <!-- Custom JS-->
+    <script src="{% static 'mainapp/js/custom.js' %}"></script>
+</body>
+
+</html>
